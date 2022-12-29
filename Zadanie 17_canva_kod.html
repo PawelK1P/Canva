@@ -1,0 +1,74 @@
+<Doctype html>
+    <html>
+    <head>
+    <Meta charset="utf-8">
+    <title> Strona zaliczeniowa JS </title>
+     <script language="JavaScript">
+      function okno_zamknij_karmasz()
+     {
+     window.close()
+     }
+     </script>
+    </head>
+    <body>
+    <textarea cols="205" rows="60">
+        <!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+ <title>Zadanie 17</title>
+ <script type="text/javascript">
+ function rysuj() {
+ var rysowanie = document.getElementById('obrazek');
+ var rodzaj = rysowanie.getContext('2d');
+rodzaj.beginPath();
+rodzaj.moveTo(230,150);
+rodzaj.quadraticCurveTo(310,130,230,220);
+rodzaj.fillStyle = 'green';
+rodzaj.fill();
+
+rodzaj.moveTo(230,150);
+rodzaj.quadraticCurveTo(150,130,230,220);
+rodzaj.fillStyle = 'green';
+rodzaj.fill();
+
+rodzaj.moveTo(230,290);
+rodzaj.quadraticCurveTo(310,310,230,220);
+rodzaj.fillStyle = 'green';
+rodzaj.fill();
+
+rodzaj.moveTo(230,290);
+rodzaj.quadraticCurveTo(150,310,230,220);
+rodzaj.fillStyle = 'green';
+rodzaj.fill();
+
+rodzaj.moveTo(160,220);
+rodzaj.quadraticCurveTo(140,150,230,220);
+rodzaj.fillStyle = 'green';
+rodzaj.fill();
+
+rodzaj.moveTo(160,220);
+rodzaj.quadraticCurveTo(140,290,230,220);
+rodzaj.fillStyle = 'green';
+rodzaj.fill();
+
+rodzaj.moveTo(300,220);
+rodzaj.quadraticCurveTo(320,150,230,220);
+rodzaj.fillStyle = 'green';
+rodzaj.fill();
+
+rodzaj.moveTo(300,220);
+rodzaj.quadraticCurveTo(320,290,230,220);
+rodzaj.fillStyle = 'green';
+rodzaj.fill();
+rodzaj.closePath();
+}
+ </script>
+</head>
+<body onload="rysuj();">
+ <canvas id="obrazek" width="1000" height="1000">
+ Twoja przeglądarka nie wspiera Canvas!
+Zainstaluj Internet Explorer 9.x
+ </canvas>
+</body>
+</html>

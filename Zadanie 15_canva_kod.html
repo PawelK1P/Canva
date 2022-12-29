@@ -1,0 +1,46 @@
+<Doctype html>
+    <html>
+    <head>
+    <Meta charset="utf-8">
+    <title> Strona zaliczeniowa JS </title>
+     <script language="JavaScript">
+      function okno_zamknij_karmasz()
+     {
+     window.close()
+     }
+     </script>
+    </head>
+    <body>
+    <textarea cols="205" rows="32">
+        <!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+ <title>Zadanie 15</title>
+ <script type="text/javascript">
+ function rysuj() {
+ var rysowanie = document.getElementById('obrazek');
+ var rodzaj = rysowanie.getContext('2d');
+ rodzaj.fillStyle = 'yellow';
+ rodzaj.fillRect(0, 0, 100, 100);
+ rodzaj.strokeRect(0, 0, 100, 100);
+ rodzaj.fillStyle = 'red';
+ rodzaj.fillRect(30, 30, 30, 30);
+ rodzaj.beginPath();
+rodzaj.moveTo(280,388); // współrzędne górnego rogu
+rodzaj.lineTo(380,388);
+rodzaj.lineTo(380,488);
+rodzaj.lineTo(280,488);
+rodzaj.lineTo(280,388);
+rodzaj.fillStyle = 'green';
+rodzaj.fill();
+ }
+ </script>
+</head>
+<body onload="rysuj();">
+ <canvas id="obrazek" width="900" height="800">
+ Twoja przeglądarka nie wspiera Canvas!
+Zainstaluj Internet Explorer 9.x
+ </canvas>
+</body>
+</html>

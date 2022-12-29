@@ -1,0 +1,64 @@
+<Doctype html>
+    <html>
+    <head>
+    <Meta charset="utf-8">
+    <title> Strona zaliczeniowa JS </title>
+     <script language="JavaScript">
+      function okno_zamknij_karmasz()
+     {
+     window.close()
+     }
+     </script>
+    </head>
+    <body>
+    <textarea cols="205" rows="49">
+        <!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+ <title>Zadanie 16</title>
+ <script type="text/javascript">
+ function rysuj() {
+ var rysowanie = document.getElementById('obrazek');
+ var rodzaj = rysowanie.getContext('2d');
+rodzaj.beginPath();
+rodzaj.arc(200,70,60,Math.PI,3,false);
+rodzaj.closePath();
+rodzaj.lineWidth = 8;
+rodzaj.strokeStyle = "#027ef2";
+rodzaj.stroke();
+rodzaj.beginPath();
+rodzaj.arc(350,70,60,0,Math.PI*2,false);
+rodzaj.closePath();
+rodzaj.lineWidth = 8;
+rodzaj.strokeStyle = "black";
+rodzaj.stroke();
+rodzaj.beginPath();
+rodzaj.arc(500,70,60,0,Math.PI*2,false);
+rodzaj.closePath();
+rodzaj.lineWidth = 8;
+rodzaj.strokeStyle = "red";
+rodzaj.stroke();
+rodzaj.beginPath();
+rodzaj.arc(270,130,60,0,Math.PI*2,false);
+rodzaj.closePath();
+rodzaj.lineWidth = 8;
+rodzaj.strokeStyle = "#f5c105";
+rodzaj.stroke();
+rodzaj.beginPath();
+rodzaj.arc(420,130,60,0,Math.PI*2,false);
+rodzaj.closePath();
+rodzaj.lineWidth = 8;
+rodzaj.strokeStyle = "green";
+rodzaj.stroke();
+ }
+ </script>
+</head>
+<body onload="rysuj();">
+ <canvas id="obrazek" width="1000" height="1000">
+ Twoja przeglądarka nie wspiera Canvas!
+Zainstaluj Internet Explorer 9.x
+ </canvas>
+</body>
+</html>
+
